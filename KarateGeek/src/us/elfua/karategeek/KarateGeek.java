@@ -1,5 +1,5 @@
 /*
-                        karate geek info file
+                        karate geek
 
         
     Copyright (C) 2012  michael theodorides <mc.theodorides@gmail.com>
@@ -31,5 +31,7 @@ public class KarateGeek {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        MainForm app = new MainForm();
+        app.show();
     }
 }

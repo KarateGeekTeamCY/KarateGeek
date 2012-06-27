@@ -1,5 +1,5 @@
 /*
-                        karate geek info file
+                        karate geek
 
         
     Copyright (C) 2012  michael theodorides <mc.theodorides@gmail.com>
@@ -20,7 +20,7 @@
  */
 
 /*
- * KlirosiGui.java
+ * LoteryForm.java
  *
  * Created on Nov 17, 2011, 2:42:16 PM
  */
@@ -30,10 +30,10 @@ package us.elfua.karategeek.lotery;
  *
  * @author mc.theodorides
  */
-public class KlirosiGui extends javax.swing.JFrame {
+public class LoteryForm extends javax.swing.JFrame {
 
-    /** Creates new form KlirosiGui */
-    public KlirosiGui() {
+    /** Creates new form LoteryForm */
+    public LoteryForm() {
         initComponents();
     }
 
@@ -197,8 +197,8 @@ public class KlirosiGui extends javax.swing.JFrame {
                             .addComponent(jTextField23, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE)
+                            .addComponent(jTextField4, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextField5, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jTextField26, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTextField2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -487,7 +487,7 @@ public class KlirosiGui extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, 0, 409, Short.MAX_VALUE)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, 0, 0, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
@@ -592,13 +592,13 @@ public class KlirosiGui extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(KlirosiGui.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoteryForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(KlirosiGui.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoteryForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(KlirosiGui.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoteryForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(KlirosiGui.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoteryForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
@@ -606,7 +606,7 @@ public class KlirosiGui extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
 
             public void run() {
-                new KlirosiGui().setVisible(true);
+                new LoteryForm().setVisible(true);
             }
         });
     }

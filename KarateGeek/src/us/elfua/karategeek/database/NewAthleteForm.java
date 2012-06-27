@@ -1,7 +1,7 @@
 package us.elfua.karategeek.database;
 
 /*
-                        karate geek info file
+                        karate geek 
 
         
     Copyright (C) 2012  michael theodorides <mc.theodorides@gmail.com>
@@ -25,12 +25,12 @@ package us.elfua.karategeek.database;
  *
  * @author Athina
  */
-public class NewAthlete extends javax.swing.JFrame {
+public class NewAthleteForm extends javax.swing.JFrame {
 
     /**
-     * Creates new form NewAthlete
+     * Creates new form NewAthleteForm
      */
-    public NewAthlete() {
+    public NewAthleteForm() {
         initComponents();
     }
 
@@ -259,7 +259,7 @@ public class NewAthlete extends javax.swing.JFrame {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel13)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -296,9 +296,9 @@ public class NewAthlete extends javax.swing.JFrame {
                                     .addComponent(jLabel5))
                                 .addGap(13, 13, 13)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextField3, javax.swing.GroupLayout.DEFAULT_SIZE, 244, Short.MAX_VALUE)
-                                    .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 244, Short.MAX_VALUE)
-                                    .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 244, Short.MAX_VALUE)
+                                    .addComponent(jTextField3)
+                                    .addComponent(jTextField1)
+                                    .addComponent(jTextField2)
                                     .addGroup(jPanel2Layout.createSequentialGroup()
                                         .addComponent(jRadioButton1)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -394,13 +394,13 @@ public class NewAthlete extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(NewAthlete.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NewAthleteForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(NewAthlete.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NewAthleteForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(NewAthlete.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NewAthleteForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(NewAthlete.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NewAthleteForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
@@ -410,7 +410,7 @@ public class NewAthlete extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
 
             public void run() {
-                new NewAthlete().setVisible(true);
+                new NewAthleteForm().setVisible(true);
             }
         });
     }

@@ -1,5 +1,5 @@
 /*
-                        karate geek info file
+                        karate geek
 
         
     Copyright (C) 2012  michael theodorides <mc.theodorides@gmail.com>
@@ -25,5 +25,7 @@ package us.elfua.karategeek.lotery;
  * @author michael theodorides
  */
 public class Lotery {
+    
+    
     
 }

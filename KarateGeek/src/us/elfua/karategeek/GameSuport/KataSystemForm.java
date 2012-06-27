@@ -1,5 +1,5 @@
 /*
-                        karate geek info file
+                        karate geek 
 
         
     Copyright (C) 2012  michael theodorides <mc.theodorides@gmail.com>
@@ -20,7 +20,7 @@
  */
 
 /*
- * VathmolgiaKataGui.java
+ * KataSystemForm.java
  *
  * Created on Nov 17, 2011, 2:04:23 PM
  */
@@ -30,10 +30,10 @@ package us.elfua.karategeek.GameSuport;
  *
  * @author mc.theodorides
  */
-public class VathmolgiaKataGui extends javax.swing.JFrame {
+public class KataSystemForm extends javax.swing.JFrame {
 
-    /** Creates new form VathmolgiaKataGui */
-    public VathmolgiaKataGui() {
+    /** Creates new form KataSystemForm */
+    public KataSystemForm() {
         initComponents();
     }
 
@@ -273,13 +273,13 @@ public class VathmolgiaKataGui extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VathmolgiaKataGui.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(KataSystemForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VathmolgiaKataGui.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(KataSystemForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VathmolgiaKataGui.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(KataSystemForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VathmolgiaKataGui.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(KataSystemForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
@@ -287,7 +287,7 @@ public class VathmolgiaKataGui extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
 
             public void run() {
-                new VathmolgiaKataGui().setVisible(true);
+                new KataSystemForm().setVisible(true);
             }
         });
     }

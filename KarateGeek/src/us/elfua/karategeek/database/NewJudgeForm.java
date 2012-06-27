@@ -1,7 +1,7 @@
 package us.elfua.karategeek.database;
 
 /*
-                        karate geek info file
+                        karate geek 
 
         
     Copyright (C) 2012  michael theodorides <mc.theodorides@gmail.com>
@@ -25,12 +25,12 @@ package us.elfua.karategeek.database;
  *
  * @author Athina
  */
-public class EditAthlete extends javax.swing.JFrame {
+public class NewJudgeForm extends javax.swing.JFrame {
 
     /**
      * Creates new form NewAthlete
      */
-    public EditAthlete() {
+    public NewJudgeForm() {
         initComponents();
     }
 
@@ -44,11 +44,6 @@ public class EditAthlete extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel15 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        jButton4 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
@@ -76,8 +71,11 @@ public class EditAthlete extends javax.swing.JFrame {
         jComboBox5 = new javax.swing.JComboBox();
         jLabel12 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
-        jLabel13 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jButton4 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -85,41 +83,7 @@ public class EditAthlete extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel15.setText("Edit athlete:");
-
-        jButton4.setText("Back");
-
-        jButton1.setText("Save");
-
-        jButton2.setText("Cancel");
-
-        jButton3.setText("Exit");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jButton4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton3)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton4)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3))
-                .addContainerGap())
-        );
+        jLabel15.setText("Insert New Judge:");
 
         jLabel1.setText("First Name");
 
@@ -248,8 +212,6 @@ public class EditAthlete extends javax.swing.JFrame {
                 .addGap(11, 11, 11))
         );
 
-        jLabel13.setText("Academy");
-
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
@@ -257,27 +219,51 @@ public class EditAthlete extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jLabel13)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap())))
+                    .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel13)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31)
+                .addGap(57, 57, 57)
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jButton4.setText("Back");
+
+        jButton1.setText("Save");
+
+        jButton2.setText("Cancel");
+
+        jButton3.setText("Exit");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jButton4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton3)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton4)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2)
+                    .addComponent(jButton3))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -307,7 +293,8 @@ public class EditAthlete extends javax.swing.JFrame {
                         .addGap(86, 86, 86))
                     .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -335,8 +322,9 @@ public class EditAthlete extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jMenu1.setText("File");
@@ -355,8 +343,7 @@ public class EditAthlete extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 423, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -365,8 +352,6 @@ public class EditAthlete extends javax.swing.JFrame {
                 .addComponent(jLabel15)
                 .addGap(8, 8, 8)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -394,13 +379,13 @@ public class EditAthlete extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(EditAthlete.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NewJudgeForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(EditAthlete.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NewJudgeForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(EditAthlete.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NewJudgeForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(EditAthlete.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NewJudgeForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
@@ -410,7 +395,7 @@ public class EditAthlete extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
 
             public void run() {
-                new EditAthlete().setVisible(true);
+                new NewJudgeForm().setVisible(true);
             }
         });
     }
@@ -426,7 +411,6 @@ public class EditAthlete extends javax.swing.JFrame {
     private javax.swing.JComboBox jComboBox5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -452,6 +436,5 @@ public class EditAthlete extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
     // End of variables declaration//GEN-END:variables
 }

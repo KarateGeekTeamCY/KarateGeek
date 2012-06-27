@@ -1,5 +1,5 @@
 /*
-                        karate geek info file
+                        karate geek 
 
         
     Copyright (C) 2012  michael theodorides <mc.theodorides@gmail.com>
@@ -20,7 +20,7 @@
  */
 
 /*
- * VathmologiaKumiteGui.java
+ * KumiteSystemForm.java
  *
  * Created on Nov 17, 2011, 2:04:44 PM
  */
@@ -30,10 +30,10 @@ package us.elfua.karategeek.GameSuport;
  *
  * @author mc.theodorides
  */
-public class VathmologiaKumiteGui extends javax.swing.JFrame {
+public class KumiteSystemForm extends javax.swing.JFrame {
 
-    /** Creates new form VathmologiaKumiteGui */
-    public VathmologiaKumiteGui() {
+    /** Creates new form KumiteSystemForm */
+    public KumiteSystemForm() {
         initComponents();
     }
 
@@ -211,8 +211,8 @@ public class VathmologiaKumiteGui extends javax.swing.JFrame {
                                 .addGap(45, 45, 45)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 169, Short.MAX_VALUE)))
-                            .addComponent(jTextField5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 303, Short.MAX_VALUE))
+                                    .addComponent(jTextField2)))
+                            .addComponent(jTextField5, javax.swing.GroupLayout.Alignment.TRAILING))
                         .addGap(88, 88, 88)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
@@ -227,10 +227,10 @@ public class VathmologiaKumiteGui extends javax.swing.JFrame {
                                 .addGap(45, 45, 45)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField3, javax.swing.GroupLayout.DEFAULT_SIZE, 169, Short.MAX_VALUE)))
-                            .addComponent(jTextField6, javax.swing.GroupLayout.DEFAULT_SIZE, 303, Short.MAX_VALUE))
+                                    .addComponent(jTextField3)))
+                            .addComponent(jTextField6))
                         .addGap(52, 52, 52))
-                    .addComponent(jSeparator1, javax.swing.GroupLayout.DEFAULT_SIZE, 746, Short.MAX_VALUE))
+                    .addComponent(jSeparator1))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -349,13 +349,13 @@ public class VathmologiaKumiteGui extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VathmologiaKumiteGui.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(KumiteSystemForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VathmologiaKumiteGui.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(KumiteSystemForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VathmologiaKumiteGui.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(KumiteSystemForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VathmologiaKumiteGui.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(KumiteSystemForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
@@ -363,7 +363,7 @@ public class VathmologiaKumiteGui extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
 
             public void run() {
-                new VathmologiaKumiteGui().setVisible(true);
+                new KumiteSystemForm().setVisible(true);
             }
         });
     }

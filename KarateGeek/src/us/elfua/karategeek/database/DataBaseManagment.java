@@ -1,5 +1,5 @@
 /*
-                        karate geek info file
+                        karate geek 
 
         
     Copyright (C) 2012  michael theodorides <mc.theodorides@gmail.com>

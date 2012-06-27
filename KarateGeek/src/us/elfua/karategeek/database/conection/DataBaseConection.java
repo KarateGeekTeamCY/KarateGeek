@@ -1,7 +1,6 @@
 /*
- karate geek info file
-
-        
+ karate geek 
+ 
  Copyright (C) 2012  michael theodorides <mc.theodorides@gmail.com>
 
  This program is free software: you can redistribute it and/or modify
