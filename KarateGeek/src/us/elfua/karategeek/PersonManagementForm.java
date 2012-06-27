@@ -209,7 +209,7 @@ public class PersonManagementForm extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItemEdit;
     private javax.swing.JMenuItem jMenuItemExit;
     private javax.swing.JMenuItem jMenuItemNew;
-    private javax.swing.JLabel lblTitle;
+    public javax.swing.JLabel lblTitle;
     private java.awt.ScrollPane scplForAthletsTable;
     private javax.swing.JTable tblAthlets;
     // End of variables declaration//GEN-END:variables

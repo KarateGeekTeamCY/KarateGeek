@@ -1,26 +1,25 @@
 package us.elfua.karategeek;
 
 /*
-                        karate geek
-
-        
-    Copyright (C) 2012  michael theodorides <mc.theodorides@gmail.com>
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-    
+ * karate geek
+ *
+ *
+ * Copyright (C) 2012 michael theodorides <mc.theodorides@gmail.com>
+ *
+ * This program is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License as published by the Free Software
+ * Foundation, either version 3 of the License, or (at your option) any later
+ * version.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU General Public License along with
+ * this program. If not, see <http://www.gnu.org/licenses/>.
+ *
  */
-
 /**
  *
  * @author Athina
@@ -30,6 +29,9 @@ public class MainForm extends javax.swing.JFrame {
     /**
      * Creates new form MainForm
      */
+    private PersonManagementForm athleteSelectionForm;
+    private PersonManagementForm judgeSelectionForm;
+
     public MainForm() {
         initComponents();
     }
@@ -70,6 +72,11 @@ public class MainForm extends javax.swing.JFrame {
         });
 
         btnJudgeManagement.setText("judge management");
+        btnJudgeManagement.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnJudgeManagementActionPerformed(evt);
+            }
+        });
 
         btnEventManagement.setText("event management");
 
@@ -165,12 +172,23 @@ public class MainForm extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAthleteManagementActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAthleteManagementActionPerformed
-        // TODO add your handling code here:
+        this.athleteSelectionForm = new PersonManagementForm();
+        this.athleteSelectionForm.lblTitle.setText("Athlete Management");
+        this.setVisible(false);
+        this.athleteSelectionForm.setVisible(true);
+
     }//GEN-LAST:event_btnAthleteManagementActionPerformed
 
     private void btnOkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOkActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnOkActionPerformed
+
+    private void btnJudgeManagementActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJudgeManagementActionPerformed
+        this.judgeSelectionForm = new PersonManagementForm();
+        this.judgeSelectionForm .lblTitle.setText("Judge Management");
+        this.setVisible(false);
+        this.judgeSelectionForm .setVisible(true);
+    }//GEN-LAST:event_btnJudgeManagementActionPerformed
 
     /**
      * @param args the command line arguments
