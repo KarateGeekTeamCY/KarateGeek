@@ -8,12 +8,12 @@ package us.elfua.karategeek;
  *
  * @author michalisa
  */
-public class AthleteManagementForm extends javax.swing.JFrame {
+public class PersonManagementForm extends javax.swing.JFrame {
 
     /**
-     * Creates new form AthleteManagementForm
+     * Creates new form PersonManagementForm
      */
-    public AthleteManagementForm() {
+    public PersonManagementForm() {
         initComponents();
     }
 
@@ -58,7 +58,9 @@ public class AthleteManagementForm extends javax.swing.JFrame {
         scplForAthletsTable.add(tblAthlets);
 
         lblTitle.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle.setText("Athlete management");
+        lblTitle.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         btnPanel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
@@ -107,10 +109,10 @@ public class AthleteManagementForm extends javax.swing.JFrame {
 
         jMenu1.setText("File");
 
-        jMenuItemNew.setText("New Athlete");
+        jMenuItemNew.setText("New");
         jMenu1.add(jMenuItemNew);
 
-        jMenuItemEdit.setText("Edit Athlete");
+        jMenuItemEdit.setText("Edit");
         jMenu1.add(jMenuItemEdit);
 
         jMenuItemBack.setText("Back");
@@ -130,9 +132,9 @@ public class AthleteManagementForm extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(lblTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(scplForAthletsTable, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(scplForAthletsTable, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblTitle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -175,13 +177,13 @@ public class AthleteManagementForm extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(AthleteManagementForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PersonManagementForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(AthleteManagementForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PersonManagementForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(AthleteManagementForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PersonManagementForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(AthleteManagementForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PersonManagementForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
@@ -191,7 +193,7 @@ public class AthleteManagementForm extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
 
             public void run() {
-                new AthleteManagementForm().setVisible(true);
+                new PersonManagementForm().setVisible(true);
             }
         });
     }
