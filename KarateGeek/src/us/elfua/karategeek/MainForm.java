@@ -184,10 +184,12 @@ public class MainForm extends javax.swing.JFrame {
     }//GEN-LAST:event_btnOkActionPerformed
 
     private void btnJudgeManagementActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJudgeManagementActionPerformed
+        
         this.judgeSelectionForm = new PersonManagementForm();
-        this.judgeSelectionForm .lblTitle.setText("Judge Management");
+        this.judgeSelectionForm.lblTitle.setText("Judge Management");
         this.setVisible(false);
-        this.judgeSelectionForm .setVisible(true);
+        this.judgeSelectionForm.setVisible(true);
+        
     }//GEN-LAST:event_btnJudgeManagementActionPerformed
 
     /**
@@ -226,6 +228,7 @@ public class MainForm extends javax.swing.JFrame {
          */
         java.awt.EventQueue.invokeLater(new Runnable() {
 
+            @Override
             public void run() {
                 new MainForm().setVisible(true);
             }
