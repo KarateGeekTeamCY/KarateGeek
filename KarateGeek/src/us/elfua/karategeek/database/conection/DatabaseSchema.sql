@@ -1,77 +1,82 @@
-%
-%                       karate geek
-%
-%        
-%    Copyright (C) 2012  michael theodorides <mc.theodorides@gmail.com>
-%
-%    This program is free software: you can redistribute it and/or modify
-%    it under the terms of the GNU General Public License as published by
-%    the Free Software Foundation, either version 3 of the License, or
-%    (at your option) any later version.
-%
-%    This program is distributed in the hope that it will be useful,
-%    but WITHOUT ANY WARRANTY; without even the implied warranty of
-%    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-%    GNU General Public License for more details.
-%
-%    You should have received a copy of the GNU General Public License
-%    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-%    
-%
+-- 
+--                        karate geek
+-- 
+--         
+--     Copyright (C) 2012  michael theodorides <mc.theodorides@gmail.com>
+-- 
+--     This program is free software: you can redistribute it and/or modify
+--     it under the terms of the GNU General Public License as published by
+--     the Free Software Foundation, either version 3 of the License, or
+--     (at your option) any later version.
+-- 
+--     This program is distributed in the hope that it will be useful,
+--     but WITHOUT ANY WARRANTY; without even the implied warranty of
+--     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+--     GNU General Public License for more details.
+-- 
+--     You should have received a copy of the GNU General Public License
+--     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+--     
+-- 
+
+drop table `karategeekdb`.`Atheletes`;
+drop table `karategeekdb`.`Teams`;
+drop table `karategeekdb`.`judges`;
+drop table `karategeekdb`.`events`;
+drop table `karategeekdb`.``;
+drop table `karategeekdb`.``;
+drop table `karategeekdb`.``;
+-- drop table `karategeekdb`.``;
 
 
-create table Atheletes 
-(
-primary key Athlete_ID  int,
-Last_Name nvarchar(50),
-First_Name nvarchar(50),
-Sex nvarchar(15),
-Date_of_Birth date,
-Belt_Level nvarchar(15),
+create table `karategeekdb`.`Atheletes` (
+`athlete_id`  int,
+`last_name` nvarchar(50),
+`first_name` nvarchar(50),
+`sex` nvarchar(15),
+`date_of_birth` date,
+`belt_level` nvarchar(15),
+`phone_number` nvarchar(15),
+`email` nvarchar(50),
+`team_id` int,
+primary key (athlete_id)
+);
+
+
+create table `karategeekdb`.`Teams`(
+team_id int,
+team_name nvarchar(50),
 Phone_Number nvarchar(15),
-Email nvarchar(50),
-Team_ID int references Teams(Team_ID)
-
-);
-
-
-create Teams
-(
-primary key Team_ID int,
-Team_Name nvarchar(50),
-Phone_Number nvarchar(15)
-
+primary key (`team_id`)
 );
 
 
 
 
-create table Judges
-(
-primary key Judge_ID  int,
-Last_Name nvarchar(50),
-First_Name nvarchar(50),
-Sex nvarchar(15),
-Phone_Number nvarchar(15),
-Email nvarchar(50),
-Address  nvarchar(50)
-
+create table `karategeekdb`.`judges` (
+`judge_id`  int,
+`last_name` nvarchar(50),
+`first_name` nvarchar(50),
+`sex` nvarchar(15),
+`phone_number` nvarchar(15),
+`email` nvarchar(50),
+`address`  nvarchar(50),
+primary key (judge_id)
 );
 
 
 
 
-create table Events
-(
-primary key Event_ID int,
-Event_Name nvarchar(50),
-Event_date date,
-Event_Location nvarchar(50),
-Event_Catecory nvarchar(50),
-Event_Level nvarchar(50),
-Event_Type nvarchar(50),
-Event_Scoring_System nvarchar(50)
-
+create table `karategeekdb`.`events` (
+`event_id` int,
+`event_name` nvarchar(50),
+`event_date` date,
+`event_location` nvarchar(50),
+`event_catecory` nvarchar(50),
+`event_level` nvarchar(50),
+`event_type` nvarchar(50),
+`event_scoring_System` nvarchar(50),
+primary key (`event_id`)
 );
 
 
