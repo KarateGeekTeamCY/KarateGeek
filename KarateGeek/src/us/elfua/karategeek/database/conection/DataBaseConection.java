@@ -64,6 +64,9 @@ public class DataBaseConection {
         return this.connection;
     }
 
+    
+    
+    
     public Connection GetConn() {
         if (this.connection != null) {
             return this.connection;
