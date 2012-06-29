@@ -111,7 +111,6 @@ primary key (`game_id`)
 
 
 
-
 create table `karategeekdb`.`game_participations`(
 `game_id` int references `karategeekdb`.`games`( `game_id` ) ,
 `athlte_id` int references `karategeekdb`.`athletes`( `athlete_id` ) ,
@@ -120,12 +119,10 @@ primary key(`game_id` , `athlete_id` )
 
 
 
-
-
 create table `karategeekdb`.`athlete_scores` (
 `game_id` int ,
-`athlete_id` int references `athletes` ( `athlete_id` ),
-`judge_id` int references `judges` ( `judges_id` ) ,
+`athlete_id` int references `karategeekdb`.`athletes` ( `athlete_id` ),
+`judge_id` int references `karategeekdb`.`judges` ( `judges_id` ) ,
 `score` int,
 `score_type` nvarchar(30)
 primary key ( `game_id` , `athlete_id` )
