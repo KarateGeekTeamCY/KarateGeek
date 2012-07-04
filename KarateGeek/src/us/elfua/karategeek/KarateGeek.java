@@ -20,6 +20,8 @@
  */
 package us.elfua.karategeek;
 
+import java.util.logging.Logger;
+
 /**
  *
  * @author michalisa
@@ -33,5 +35,7 @@ public class KarateGeek {
         // TODO code application logic here
         MainForm app = new MainForm();
         app.show();
+        
+        
     }
 }

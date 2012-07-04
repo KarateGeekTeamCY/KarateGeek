@@ -1,5 +1,8 @@
 package us.elfua.karategeek;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /*
  * karate geek
  *
@@ -29,8 +32,7 @@ public class MainForm extends javax.swing.JFrame {
     /**
      * Creates new form MainForm
      */
-    private PersonManagementForm athleteSelectionForm;
-    private PersonManagementForm judgeSelectionForm;
+    private ObjectSellecttingForm selectionForm;
 
     public MainForm() {
         initComponents();
@@ -52,7 +54,6 @@ public class MainForm extends javax.swing.JFrame {
         btnEventManagement = new javax.swing.JButton();
         btnEventSupport = new javax.swing.JButton();
         pnlOkExit = new javax.swing.JPanel();
-        btnOk = new javax.swing.JButton();
         btnExit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -79,6 +80,11 @@ public class MainForm extends javax.swing.JFrame {
         });
 
         btnEventManagement.setText("event management");
+        btnEventManagement.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEventManagementActionPerformed(evt);
+            }
+        });
 
         btnEventSupport.setText("event support");
 
@@ -111,26 +117,19 @@ public class MainForm extends javax.swing.JFrame {
 
         pnlOkExit.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        btnOk.setText("OK");
-        btnOk.setMaximumSize(new java.awt.Dimension(51, 23));
-        btnOk.setMinimumSize(new java.awt.Dimension(51, 23));
-        btnOk.setPreferredSize(new java.awt.Dimension(51, 23));
-        btnOk.addActionListener(new java.awt.event.ActionListener() {
+        btnExit.setText("Exit");
+        btnExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnOkActionPerformed(evt);
+                btnExitActionPerformed(evt);
             }
         });
-
-        btnExit.setText("Exit");
 
         javax.swing.GroupLayout pnlOkExitLayout = new javax.swing.GroupLayout(pnlOkExit);
         pnlOkExit.setLayout(pnlOkExitLayout);
         pnlOkExitLayout.setHorizontalGroup(
             pnlOkExitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlOkExitLayout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlOkExitLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btnOk, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
                 .addComponent(btnExit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
@@ -138,9 +137,7 @@ public class MainForm extends javax.swing.JFrame {
             pnlOkExitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlOkExitLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(pnlOkExitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnOk, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnExit))
+                .addComponent(btnExit)
                 .addContainerGap(15, Short.MAX_VALUE))
         );
 
@@ -172,25 +169,38 @@ public class MainForm extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAthleteManagementActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAthleteManagementActionPerformed
-        this.athleteSelectionForm = new PersonManagementForm();
-        this.athleteSelectionForm.lblTitle.setText("Athlete Management");
+        this.selectionForm = new ObjectSellecttingForm();
+        this.selectionForm.lblTitle.setText("Athlete Management");
+        this.selectionForm.parent = this;
         this.setVisible(false);
-        this.athleteSelectionForm.setVisible(true);
+        this.selectionForm.setVisible(true);
 
     }//GEN-LAST:event_btnAthleteManagementActionPerformed
 
-    private void btnOkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOkActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnOkActionPerformed
-
     private void btnJudgeManagementActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJudgeManagementActionPerformed
-        
-        this.judgeSelectionForm = new PersonManagementForm();
-        this.judgeSelectionForm.lblTitle.setText("Judge Management");
+
+        this.selectionForm = new ObjectSellecttingForm();
+        this.selectionForm.lblTitle.setText("Judge Management");
+        this.selectionForm.parent = this;
         this.setVisible(false);
-        this.judgeSelectionForm.setVisible(true);
-        
+        this.selectionForm.setVisible(true);
+
     }//GEN-LAST:event_btnJudgeManagementActionPerformed
+
+    private void btnEventManagementActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEventManagementActionPerformed
+        this.selectionForm = new ObjectSellecttingForm();
+        this.selectionForm.lblTitle.setText("Event Management");
+        this.selectionForm.parent = this;
+        this.setVisible(false);
+        this.selectionForm.setVisible(true);
+    }//GEN-LAST:event_btnEventManagementActionPerformed
+
+    private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
+        
+        //this.hide();
+        System.exit(0);
+        
+    }//GEN-LAST:event_btnExitActionPerformed
 
     /**
      * @param args the command line arguments
@@ -240,7 +250,6 @@ public class MainForm extends javax.swing.JFrame {
     private javax.swing.JButton btnEventSupport;
     private javax.swing.JButton btnExit;
     private javax.swing.JButton btnJudgeManagement;
-    private javax.swing.JButton btnOk;
     private javax.swing.JLabel lblTitle;
     private javax.swing.JPanel pnlMainAction;
     private javax.swing.JPanel pnlOkExit;
