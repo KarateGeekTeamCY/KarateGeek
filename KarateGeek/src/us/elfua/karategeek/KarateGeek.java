@@ -35,6 +35,11 @@ public class KarateGeek {
         // TODO code application logic here
         MainForm app = new MainForm();
         app.show();
+
+
+
+
+
         
         
     }
