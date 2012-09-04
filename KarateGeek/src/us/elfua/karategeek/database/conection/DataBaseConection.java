@@ -27,6 +27,8 @@ import java.sql.DriverManager;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.lang.System;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 public class DataBaseConection {
 
@@ -64,9 +66,34 @@ public class DataBaseConection {
         return this.connection;
     }
 
-    
-    
-    
+    public ResultSet executeQuery(String SQL) throws SQLException {
+        this.connect();
+
+        ResultSet rst;
+        Statement stm;
+        this.connect();
+        stm = this.connection.createStatement();
+        rst = stm.executeQuery(SQL);
+
+        this.connection.close();
+
+        return rst;
+    }
+
+    public boolean executeNonQuery(String SQL) throws SQLException {
+        this.connect();
+
+        boolean status;
+        Statement stm;
+        this.connect();
+        stm = this.connection.createStatement();
+        status = stm.execute(SQL);
+
+        this.connection.close();
+
+        return status;
+    }
+
     public Connection GetConn() {
         if (this.connection != null) {
             return this.connection;
