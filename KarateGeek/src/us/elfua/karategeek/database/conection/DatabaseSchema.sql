@@ -1,4 +1,4 @@
--- 
+﻿-- 
 --                        karate geek
 -- 
 --         
@@ -29,16 +29,18 @@ drop table karategeekdb.game_participations;
 drop table karategeekdb.athlete_scores;
 -- drop table karategeekdb.;
 
+create schema karategeekdb;
+
 
 create table karategeekdb.atheletes (
 athlete_id  int,
-last_name nvarchar(50),
-first_name nvarchar(50),
-sex nvarchar(15),
+last_name varchar(50),
+first_name varchar(50),
+sex varchar(15),
 date_of_birth date,
-belt_level nvarchar(15),
-phone_number nvarchar(15),
-email nvarchar(50),
+belt_level varchar(15),
+phone_number varchar(15),
+email varchar(50),
 team_id int referenses karategeekdb.teams( team_id ),
 primary key ( athlete_id )
 );
@@ -46,8 +48,8 @@ primary key ( athlete_id )
 
 create table karategeekdb.teams(
 team_id int,
-team_name nvarchar(50),
-Phone_Number nvarchar(15),
+team_name varchar(50),
+Phone_Number varchar(15),
 primary key ( team_id )
 );
 
@@ -56,12 +58,12 @@ primary key ( team_id )
 
 create table karategeekdb.judges (
 judge_id  int,
-last_name nvarchar(50),
-first_name nvarchar(50),
-sex nvarchar(15),
-phone_number nvarchar(15),
-email nvarchar(50),
-address  nvarchar(50),
+last_name varchar(50),
+first_name varchar(50),
+sex varchar(15),
+phone_number varchar(15),
+email varchar(50),
+address  varchar(50),
 primary key ( judge_id )
 );
 
@@ -70,13 +72,13 @@ primary key ( judge_id )
 
 create table karategeekdb.events (
 event_id int,
-event_name nvarchar(50),
+event_name varchar(50),
 event_date date,
-event_location nvarchar(50),
-event_catecory nvarchar(50),
-event_level nvarchar(50),
-event_type nvarchar(50),
-event_scoring_System nvarchar(50),
+event_location varchar(50),
+event_catecory varchar(50),
+event_level varchar(50),
+event_type varchar(50),
+event_scoring_System varchar(50),
 primary key ( event_id )
 );
 
@@ -86,7 +88,7 @@ primary key ( event_id )
 create table karategeekdb.Event_Participations (
 athlet_id int references karategeekdb.athletes( athlete_id ) ,
 event_id int references karategeekdb.events( event_id ) ,
-level_at_time nvarchar(20) ,
+level_at_time varchar(20) ,
 team int,
 primary key ( athlet_id , event_id )
 );
@@ -94,7 +96,7 @@ primary key ( athlet_id , event_id )
 
 create table karategeekdb.event_winners(
 athlet_id int references karategeekdb.athletes( athlete_id ) ,
-event_id int karategeekdb.events( event_id ) ,
+event_id int references karategeekdb.events( event_id ) ,
 possition int ,
 primary key(athlet_id, event_id )
 );
@@ -103,7 +105,7 @@ primary key(athlet_id, event_id )
 
 create table karategeekdb.games (
 game_id int ,
-event_id int karategeekdb.events( event_id ) ,
+event_id int references karategeekdb.events( event_id ) ,
 game_phase int ,
 game_position int ,
 primary key (game_id)
@@ -114,7 +116,7 @@ primary key (game_id)
 create table karategeekdb.game_participations(
 game_id int references karategeekdb.games( game_id ) ,
 athlte_id int references karategeekdb.athletes( athlete_id ) ,
-primary key(game_id , athlete_id )
+primary key (game_id , athlete_id )
 );
 
 
@@ -124,7 +126,7 @@ game_id int ,
 athlete_id int references karategeekdb.athletes ( athlete_id ),
 judge_id int references karategeekdb.judges ( judges_id ) ,
 score int,
-score_type nvarchar(30)
+score_type varchar(30)
 primary key ( game_id , athlete_id )
 );
 
