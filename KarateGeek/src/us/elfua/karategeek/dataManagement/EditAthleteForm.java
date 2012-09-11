@@ -1,4 +1,4 @@
-package us.elfua.karategeek.database;
+package us.elfua.karategeek.dataManagement;
 
 /*
                         karate geek 
@@ -25,12 +25,12 @@ package us.elfua.karategeek.database;
  *
  * @author Athina
  */
-public class NewAthleteForm extends javax.swing.JFrame {
+public class EditAthleteForm extends javax.swing.JFrame {
 
     /**
-     * Creates new form NewAthleteForm
+     * Creates new form NewAthlete
      */
-    public NewAthleteForm() {
+    public EditAthleteForm() {
         initComponents();
     }
 
@@ -85,7 +85,7 @@ public class NewAthleteForm extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel15.setText("Insert New athlete:");
+        jLabel15.setText("Edit athlete:");
 
         jButton4.setText("Back");
 
@@ -394,13 +394,13 @@ public class NewAthleteForm extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(NewAthleteForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EditAthleteForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(NewAthleteForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EditAthleteForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(NewAthleteForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EditAthleteForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(NewAthleteForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(EditAthleteForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
@@ -410,7 +410,7 @@ public class NewAthleteForm extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
 
             public void run() {
-                new NewAthleteForm().setVisible(true);
+                new EditAthleteForm().setVisible(true);
             }
         });
     }
