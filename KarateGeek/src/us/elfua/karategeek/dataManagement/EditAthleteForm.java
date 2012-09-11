@@ -214,7 +214,7 @@ public class EditAthleteForm extends javax.swing.JFrame {
 
         jComboBox5.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        jLabel12.setText("Zone Color");
+        jLabel12.setText("belt Color");
 
         jLabel8.setText("City");
 
