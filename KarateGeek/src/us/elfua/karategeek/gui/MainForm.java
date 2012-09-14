@@ -48,7 +48,7 @@ public class MainForm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblTitle = new javax.swing.JLabel();
+        lblInfo = new javax.swing.JLabel();
         pnlMainAction = new javax.swing.JPanel();
         btnAthleteManagement = new javax.swing.JButton();
         btnJudgeManagement = new javax.swing.JButton();
@@ -59,13 +59,13 @@ public class MainForm extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        lblTitle.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblTitle.setText("Karate Federetion");
+        lblInfo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblInfo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblInfo.setText("info");
 
         pnlMainAction.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        btnAthleteManagement.setText("athlete management");
+        btnAthleteManagement.setText("data management");
         btnAthleteManagement.setName("btnAthleteManagement"); // NOI18N
         btnAthleteManagement.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -73,14 +73,14 @@ public class MainForm extends javax.swing.JFrame {
             }
         });
 
-        btnJudgeManagement.setText("judge management");
+        btnJudgeManagement.setText("event management");
         btnJudgeManagement.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnJudgeManagementActionPerformed(evt);
             }
         });
 
-        btnEventManagement.setText("event management");
+        btnEventManagement.setText("lottery");
         btnEventManagement.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEventManagementActionPerformed(evt);
@@ -151,14 +151,14 @@ public class MainForm extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(pnlOkExit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(pnlMainAction, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lblTitle, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(lblInfo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lblTitle)
+                .addComponent(lblInfo)
                 .addGap(18, 18, 18)
                 .addComponent(pnlMainAction, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -170,36 +170,22 @@ public class MainForm extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAthleteManagementActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAthleteManagementActionPerformed
-        this.selectionForm = new ObjectSellecttingForm();
-        this.selectionForm.lblTitle.setText("Athlete Management");
-        this.selectionForm.parent = this;
-        this.setVisible(false);
-        this.selectionForm.setVisible(true);
+        
 
     }//GEN-LAST:event_btnAthleteManagementActionPerformed
 
     private void btnJudgeManagementActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJudgeManagementActionPerformed
 
-        this.selectionForm = new ObjectSellecttingForm();
-        this.selectionForm.lblTitle.setText("Judge Management");
-        this.selectionForm.parent = this;
-        this.setVisible(false);
-        this.selectionForm.setVisible(true);
 
     }//GEN-LAST:event_btnJudgeManagementActionPerformed
 
     private void btnEventManagementActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEventManagementActionPerformed
-        this.selectionForm = new ObjectSellecttingForm();
-        this.selectionForm.lblTitle.setText("Event Management");
-        this.selectionForm.parent = this;
-        this.setVisible(false);
-        this.selectionForm.setVisible(true);
+       
     }//GEN-LAST:event_btnEventManagementActionPerformed
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
         
-        //this.hide();
-        System.exit(0);
+   
         
     }//GEN-LAST:event_btnExitActionPerformed
 
@@ -251,7 +237,7 @@ public class MainForm extends javax.swing.JFrame {
     private javax.swing.JButton btnEventSupport;
     private javax.swing.JButton btnExit;
     private javax.swing.JButton btnJudgeManagement;
-    private javax.swing.JLabel lblTitle;
+    private javax.swing.JLabel lblInfo;
     private javax.swing.JPanel pnlMainAction;
     private javax.swing.JPanel pnlOkExit;
     // End of variables declaration//GEN-END:variables
