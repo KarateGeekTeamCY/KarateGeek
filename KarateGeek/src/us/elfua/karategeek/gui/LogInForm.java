@@ -91,6 +91,7 @@ public class LogInForm extends javax.swing.JFrame {
         );
 
         lblInfo.setText("info");
+        lblInfo.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

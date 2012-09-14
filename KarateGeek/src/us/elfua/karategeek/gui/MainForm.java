@@ -62,6 +62,7 @@ public class MainForm extends javax.swing.JFrame {
         lblInfo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         lblInfo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblInfo.setText("info");
+        lblInfo.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         pnlMainAction.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
