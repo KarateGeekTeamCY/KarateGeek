@@ -53,15 +53,10 @@ public class ObjectSellecttingForm extends javax.swing.JFrame {
         btnEdit = new javax.swing.JButton();
         btnBack = new javax.swing.JButton();
         btnExit = new javax.swing.JButton();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenuItemNew = new javax.swing.JMenuItem();
-        jMenuItemEdit = new javax.swing.JMenuItem();
-        jMenuItemBack = new javax.swing.JMenuItem();
-        jMenuItemExit = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        tblAthlets.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         tblAthlets.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -136,34 +131,17 @@ public class ObjectSellecttingForm extends javax.swing.JFrame {
         btnBack.getAccessibleContext().setAccessibleName("");
         btnExit.getAccessibleContext().setAccessibleName("");
 
-        jMenu1.setText("File");
-
-        jMenuItemNew.setText("New");
-        jMenu1.add(jMenuItemNew);
-
-        jMenuItemEdit.setText("Edit");
-        jMenu1.add(jMenuItemEdit);
-
-        jMenuItemBack.setText("Back");
-        jMenu1.add(jMenuItemBack);
-
-        jMenuItemExit.setText("Exit");
-        jMenu1.add(jMenuItemExit);
-
-        jMenuBar1.add(jMenu1);
-
-        setJMenuBar(jMenuBar1);
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(scplForAthletsTable, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lblTitle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(btnPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblTitle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -172,7 +150,7 @@ public class ObjectSellecttingForm extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(lblTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(scplForAthletsTable, javax.swing.GroupLayout.DEFAULT_SIZE, 336, Short.MAX_VALUE)
+                .addComponent(scplForAthletsTable, javax.swing.GroupLayout.DEFAULT_SIZE, 421, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -242,12 +220,6 @@ public class ObjectSellecttingForm extends javax.swing.JFrame {
     private javax.swing.JButton btnExit;
     private javax.swing.JButton btnNew;
     private javax.swing.JPanel btnPanel;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItemBack;
-    private javax.swing.JMenuItem jMenuItemEdit;
-    private javax.swing.JMenuItem jMenuItemExit;
-    private javax.swing.JMenuItem jMenuItemNew;
     public javax.swing.JLabel lblTitle;
     private java.awt.ScrollPane scplForAthletsTable;
     private javax.swing.JTable tblAthlets;
