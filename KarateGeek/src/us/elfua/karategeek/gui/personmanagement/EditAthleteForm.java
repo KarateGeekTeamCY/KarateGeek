@@ -1,4 +1,4 @@
-package us.elfua.karategeek.dataManagement;
+package us.elfua.karategeek.gui.personmanagement;
 
 /*
                         karate geek 

@@ -24,7 +24,7 @@
  *
  * Created on Nov 17, 2011, 2:04:44 PM
  */
-package us.elfua.karategeek.GameSuport;
+package us.elfua.karategeek.gui.gamesupport;
 
 /**
  *

@@ -1,5 +1,6 @@
-package us.elfua.karategeek;
+package us.elfua.karategeek.gui;
 
+import us.elfua.karategeek.gui.ObjectSellecttingForm;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -65,7 +66,7 @@ public class MainForm extends javax.swing.JFrame {
         pnlMainAction.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         btnAthleteManagement.setText("athlete management");
-        btnAthleteManagement.setName("btnAthleteManagement");
+        btnAthleteManagement.setName("btnAthleteManagement"); // NOI18N
         btnAthleteManagement.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAthleteManagementActionPerformed(evt);

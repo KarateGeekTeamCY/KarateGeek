@@ -20,6 +20,7 @@
  */
 package us.elfua.karategeek;
 
+import us.elfua.karategeek.gui.MainForm;
 import java.util.logging.Logger;
 
 /**

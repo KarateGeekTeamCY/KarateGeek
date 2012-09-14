@@ -18,7 +18,7 @@
  * this program. If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package us.elfua.karategeek;
+package us.elfua.karategeek.gui;
 
 /**
  *

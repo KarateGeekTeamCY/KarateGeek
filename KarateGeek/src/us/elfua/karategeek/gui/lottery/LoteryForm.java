@@ -24,7 +24,7 @@
  *
  * Created on Nov 17, 2011, 2:42:16 PM
  */
-package us.elfua.karategeek.lotery;
+package us.elfua.karategeek.gui.lottery;
 
 /**
  *
