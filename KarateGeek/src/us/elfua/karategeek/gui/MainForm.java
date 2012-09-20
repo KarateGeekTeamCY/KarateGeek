@@ -61,6 +61,7 @@ public class MainForm extends javax.swing.JFrame {
         mainPanem = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(878, 700));
 
         lblInfo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         lblInfo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -69,6 +70,7 @@ public class MainForm extends javax.swing.JFrame {
 
         menuPanel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
+        btnAthleteManagement.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnAthleteManagement.setText("data management");
         btnAthleteManagement.setName("btnAthleteManagement"); // NOI18N
         btnAthleteManagement.addActionListener(new java.awt.event.ActionListener() {
@@ -77,6 +79,7 @@ public class MainForm extends javax.swing.JFrame {
             }
         });
 
+        btnJudgeManagement.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnJudgeManagement.setText("event management");
         btnJudgeManagement.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,6 +87,7 @@ public class MainForm extends javax.swing.JFrame {
             }
         });
 
+        btnEventManagement.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnEventManagement.setText("lottery");
         btnEventManagement.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,12 +95,16 @@ public class MainForm extends javax.swing.JFrame {
             }
         });
 
+        btnEventSupport.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnEventSupport.setText("event support");
 
+        btnSettings.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnSettings.setText("settings");
 
+        btnAgenda.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnAgenda.setText("agenda");
 
+        btnExit.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnExit.setText("Exit");
         btnExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -104,6 +112,7 @@ public class MainForm extends javax.swing.JFrame {
             }
         });
 
+        btnReports.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnReports.setText("reports");
 
         javax.swing.GroupLayout menuPanelLayout = new javax.swing.GroupLayout(menuPanel);
@@ -114,7 +123,7 @@ public class MainForm extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(btnAgenda)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnAthleteManagement, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnAthleteManagement)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnJudgeManagement)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -123,7 +132,7 @@ public class MainForm extends javax.swing.JFrame {
                 .addComponent(btnEventSupport)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnReports)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnSettings)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnExit)
@@ -132,14 +141,14 @@ public class MainForm extends javax.swing.JFrame {
         menuPanelLayout.setVerticalGroup(
             menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                .addComponent(btnAgenda)
                 .addComponent(btnAthleteManagement)
                 .addComponent(btnJudgeManagement)
                 .addComponent(btnEventManagement)
                 .addComponent(btnEventSupport)
                 .addComponent(btnSettings)
                 .addComponent(btnExit)
-                .addComponent(btnReports))
+                .addComponent(btnReports)
+                .addComponent(btnAgenda))
         );
 
         mainPanem.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -152,7 +161,7 @@ public class MainForm extends javax.swing.JFrame {
         );
         mainPanemLayout.setVerticalGroup(
             mainPanemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 668, Short.MAX_VALUE)
+            .addGap(0, 600, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
