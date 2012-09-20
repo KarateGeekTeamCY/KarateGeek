@@ -22,15 +22,17 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
+          <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="lblInfo" max="32767" attributes="0"/>
-                  <Component id="pnlOkExit" alignment="0" max="32767" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="pnlMainAction" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="menuPanel" max="32767" attributes="0"/>
+                          <Component id="lblInfo" max="32767" attributes="0"/>
+                      </Group>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
+                  <Component id="mainPanem" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -40,11 +42,11 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="lblInfo" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="pnlMainAction" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="pnlOkExit" min="-2" max="-2" attributes="0"/>
+              <Component id="lblInfo" min="-2" pref="33" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="menuPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="mainPanem" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -65,7 +67,7 @@
         </Property>
       </Properties>
     </Component>
-    <Container class="javax.swing.JPanel" name="pnlMainAction">
+    <Container class="javax.swing.JPanel" name="menuPanel">
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
@@ -77,33 +79,33 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Component id="btnAgenda" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="btnEventManagement" max="32767" attributes="1"/>
-                      <Component id="btnJudgeManagement" alignment="0" pref="158" max="32767" attributes="1"/>
-                      <Component id="btnAthleteManagement" alignment="0" max="32767" attributes="1"/>
-                      <Component id="btnEventSupport" max="32767" attributes="1"/>
-                      <Component id="btnSettings" alignment="0" max="32767" attributes="0"/>
-                  </Group>
+                  <Component id="btnAthleteManagement" min="-2" max="-2" attributes="1"/>
                   <EmptySpace max="-2" attributes="0"/>
+                  <Component id="btnJudgeManagement" min="-2" pref="119" max="-2" attributes="1"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="btnEventManagement" min="-2" pref="111" max="-2" attributes="1"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="btnEventSupport" min="-2" pref="119" max="-2" attributes="1"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="btnSettings" min="-2" pref="106" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="btnExit" min="-2" pref="80" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="btnAthleteManagement" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="btnJudgeManagement" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="btnEventManagement" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="btnEventSupport" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="btnSettings" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnAgenda" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnAthleteManagement" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnJudgeManagement" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnEventManagement" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnEventSupport" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnSettings" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnExit" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -144,9 +146,22 @@
             <Property name="text" type="java.lang.String" value="settings"/>
           </Properties>
         </Component>
+        <Component class="javax.swing.JButton" name="btnAgenda">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="agenda"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnExit">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Exit"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnExitActionPerformed"/>
+          </Events>
+        </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JPanel" name="pnlOkExit">
+    <Container class="javax.swing.JPanel" name="mainPanem">
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
@@ -158,33 +173,15 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="btnExit" max="32767" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-              </Group>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="btnExit" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
-              </Group>
+              <EmptySpace min="0" pref="668" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
       </Layout>
-      <SubComponents>
-        <Component class="javax.swing.JButton" name="btnExit">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Exit"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnExitActionPerformed"/>
-          </Events>
-        </Component>
-      </SubComponents>
     </Container>
   </SubComponents>
 </Form>
