@@ -24,5 +24,7 @@ package us.elfua.karategeek.lotery;
  *
  * @author michael theodorides
  */
+
+
 public class Lotery {
 }
