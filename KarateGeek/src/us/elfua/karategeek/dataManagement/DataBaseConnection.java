@@ -1,6 +1,6 @@
 /*
- karate geek 
- 
+ karate geek
+
  Copyright (C) 2012  michael theodorides <mc.theodorides@gmail.com>
 
  This program is free software: you can redistribute it and/or modify
@@ -15,7 +15,7 @@
 
  You should have received a copy of the GNU General Public License
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
-    
+
  */
 package us.elfua.karategeek.dataManagement;
 
@@ -30,7 +30,7 @@ import java.lang.System;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class DataBaseConection {
+public class DataBaseConnection {
 
     private Connection connection;
 
