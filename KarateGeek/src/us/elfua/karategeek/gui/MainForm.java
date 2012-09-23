@@ -1,6 +1,5 @@
 package us.elfua.karategeek.gui;
 
-import us.elfua.karategeek.gui.ObjectSellecttingForm;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.jdesktop.swingx.JXDatePicker;
@@ -35,7 +34,6 @@ public class MainForm extends javax.swing.JFrame {
     /**
      * Creates new form MainForm
      */
-    private ObjectSellecttingForm selectionForm;
 
     public MainForm() {
         initComponents();
