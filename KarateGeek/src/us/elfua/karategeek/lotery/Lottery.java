@@ -26,5 +26,5 @@ package us.elfua.karategeek.lotery;
  */
 
 
-public class Lotery {
+public class Lottery {
 }
