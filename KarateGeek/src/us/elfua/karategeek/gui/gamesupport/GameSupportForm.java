@@ -44,6 +44,7 @@ public class GameSupportForm extends javax.swing.JFrame {
         jButton3.setText("jButton3");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jLabel1.setText("info");
         jLabel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());

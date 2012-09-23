@@ -78,6 +78,7 @@ public class KumiteSystemForm extends javax.swing.JFrame {
         jButton18 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         lblBunner.setText("kumite mach info");
         lblBunner.addActionListener(new java.awt.event.ActionListener() {

@@ -61,6 +61,7 @@ public class LoteryForm extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jTextField1.setText("game info");
         jTextField1.addActionListener(new java.awt.event.ActionListener() {

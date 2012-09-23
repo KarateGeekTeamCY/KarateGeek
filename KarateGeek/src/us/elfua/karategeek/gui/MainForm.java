@@ -67,6 +67,7 @@ public class MainForm extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         calendarPanel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
