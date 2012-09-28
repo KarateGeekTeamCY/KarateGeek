@@ -169,7 +169,7 @@ public class KumiteSystemForm extends javax.swing.JFrame {
 
         jButton14.setText("doctor-stop");
 
-        jButton13.setText("kei-koka");
+        jButton13.setText("kei-koku");
 
         jButton12.setText("ippon");
 
@@ -232,7 +232,7 @@ public class KumiteSystemForm extends javax.swing.JFrame {
 
         jButton3.setText("chui");
 
-        jButton4.setText("kei-koka");
+        jButton4.setText("kei-koku");
 
         jButton7.setText("doctor-stop");
 

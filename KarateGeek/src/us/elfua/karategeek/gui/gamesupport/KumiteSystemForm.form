@@ -261,7 +261,7 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButton13">
               <Properties>
-                <Property name="text" type="java.lang.String" value="kei-koka"/>
+                <Property name="text" type="java.lang.String" value="kei-koku"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="jButton12">
@@ -362,7 +362,7 @@
             </Component>
             <Component class="javax.swing.JButton" name="jButton4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="kei-koka"/>
+                <Property name="text" type="java.lang.String" value="kei-koku"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="jButton7">
