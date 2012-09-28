@@ -1,8 +1,8 @@
-git checkout mike-t
+﻿git checkout nikolas
 git push
 git checkout master
 git pull
-git merge mike-t
+git merge nikolas
 git push
 git checkout athina 
 git pull
@@ -12,8 +12,8 @@ git checkout mike-a
 git pull
 git merge master
 git push
-git checkout nikolas 
+git checkout mike-t 
 git pull
 git merge master
 git push
-git checkout mike-t
+git checkout nikolas
